@@ -34,3 +34,9 @@ jobs:
 
       - name: Sync build folder to S3
         run: aws s3 sync dist/ s3://my-react-app-jeeva-uat --delete
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id E2CNGKLBNDNI1B \
+            --paths "/*"

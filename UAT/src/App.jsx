@@ -63,7 +63,7 @@ function App() {
       <h1>PDF Upload Form</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Name:</label>
+          <label>Please Enter Your Name :</label>
           <input
             type="text"
             placeholder="Enter name"
@@ -74,7 +74,7 @@ function App() {
         </div>
 
         <div>
-          <label>Age:</label>
+          <label>Please Enter Your Age :</label>
           <input
             type="number"
             placeholder="Enter age"
@@ -85,7 +85,7 @@ function App() {
         </div>
 
         <div>
-          <label>PDF File:</label>
+          <label>PDF File to be Uploaded HERE :</label>
           <input
             type="file"
             accept="application/pdf"
